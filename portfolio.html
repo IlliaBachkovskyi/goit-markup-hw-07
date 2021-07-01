@@ -18,36 +18,54 @@
   </head>
   <body>
     <header class="section-header">
-      <div class="container header-container">
-        <a href="#" class="logo-header"
-          ><span class="logo-first-part">Web</span>Studio</a
+      <div class="container section-header__container">
+        <a href="#" class="logo section-header__logo logo__studio_color_black"
+          ><span class="logo__first-part">Web</span>Studio</a
         >
         <nav>
           <ul class="header-nav-list">
-            <li>
-              <a href="./index.html" class="link-header">Студия</a>
+            <li class="header-nav-list__item">
+              <a
+                href="./index.html"
+                class="header-nav-list__link"
+                >Студия</a
+              >
             </li>
-            <li>
-              <a href="" class="link-header highlight-link">Портфолио</a>
+            <li class="header-nav-list__item">
+              <a href="" class="header-nav-list__link header-nav-list__link--highlight"
+                >Портфолио</a
+              >
             </li>
-            <li>
-              <a href="#" class="link-header">Контакты</a>
+            <li class="header-nav-list__item">
+              <a href="#" class="header-nav-list__link">Контакты</a>
             </li>
           </ul>
         </nav>
-        <ul class="contacts-list">
-          <li>
-            <a href="mailto:info@devstudio.com" class="link-header mail-header"
-              ><svg class="icon-header-contacts" width="16px" height="12px">
-               <use href="./images/icons.svg#icon-mail"></use>
-               </svg> info@devstudio.com</a
+        <ul class="header-contacts-list">
+          <li class="header-contacts-list__item">
+            <a
+              href="mailto:info@devstudio.com"
+              class="header-contacts-list__link"
+              ><svg
+                class="header-contacts-list__icon"
+                width="16px"
+                height="12px"
+              >
+                <use href="./images/icons.svg#icon-mail"></use>
+              </svg>
+              info@devstudio.com</a
             >
           </li>
-          <li>
-            <a href="tel:+380961111111" class="link-header tel-header"
-              ><svg class="icon-header-contacts" width="10px" height="16px">
-               <use href="./images/icons.svg#icon-phone"></use>
-               </svg> +38 096 111 11 11</a
+          <li class="header-contacts-list__item">
+            <a href="tel:+380961111111" class="header-contacts-list__link"
+              ><svg
+                class="header-contacts-list__icon"
+                width="10px"
+                height="16px"
+              >
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
+              +38 096 111 11 11</a
             >
           </li>
         </ul>
@@ -59,166 +77,166 @@
         <div class="container">
           <h2 class="visually-hidden">портфолио</h2>
           <ul class="portfolio-button-list">
-            <li>
-              <button class="sing-link-portfolio" type="button">Все</button>
+            <li class="portfolio-button-list__item">
+              <button class="button-portfolio aiming-transform" type="button">Все</button>
             </li>
-            <li>
-              <button class="sing-link-portfolio" type="button">Веб-сайты</button>
+            <li class="portfolio-button-list__item">
+              <button class="button-portfolio aiming-transform" type="button">Веб-сайты</button>
             </li>
-            <li>
-              <button class="sing-link-portfolio" type="button">Приложения</button>
+            <li class="portfolio-button-list__item">
+              <button class="button-portfolio aiming-transform" type="button">Приложения</button>
             </li>
-            <li>
-              <button class="sing-link-portfolio" type="button">Дизайн</button>
+            <li class="portfolio-button-list__item">
+              <button class="button-portfolio aiming-transform" type="button">Дизайн</button>
             </li>
-            <li>
-              <button class="sing-link-portfolio" type="button">Маркетинг</button>
+            <li class="portfolio-button-list__item">
+              <button class="button-portfolio aiming-transform" type="button">Маркетинг</button>
             </li>
           </ul>
-          <ul class="list-portfolio-crad">
-            <li class="portfolio-crad">
-              <a href="">
-                <div class="portfolio-thumb">
-                  <img class="portfolio-crad-img" src="./images/tehnokryak.jpg" alt="Технокряк" width="370" height="294" />
-                  <div class="hover-wrapper">
-                    <p>Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
+          <ul class="portfolio-card-list">
+            <li class="portfolio-card-list__item">
+              <a class="portfolio-card-list__link" href="">
+                <div class="portfolio-card-list__thumb">
+                  <img class="portfolio-card-list__img" src="./images/tehnokryak.jpg" alt="Технокряк" width="370" height="294" />
+                  <div class="portfolio-card-hover-wrapper">
+                    <p class="portfolio-card-hover-wrapper__text">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
                   </div>
                 </div>
-                <div class="portfolio-title-crad">
-                  <h3>Технокряк</h3>
-                  <p>Веб-сайт</p>
+                <div class="portfolio-card-list-caption">
+                  <h3 class="portfolio-card-list-caption__title">Технокряк</h3>
+                  <p class="portfolio-card-list-caption__text">Веб-сайт</p>
                 </div>
               </a>
             </li>
-            <li class="portfolio-crad">
-              <a href="">
-                <div class="portfolio-thumb">
-                <img class="portfolio-crad-img"
+            <li class="portfolio-card-list__item">
+              <a class="portfolio-card-list__link" href="">
+                <div class="portfolio-card-list__thumb">
+                <img class="portfolio-card-list__img"
                   src="./images/posterNewOrlean.jpg"
                   alt="Постер New Orlean vs Golden Star"
                   width="370"
                   height="294"
                 />
-                <div class="hover-wrapper">
-                    <p> .</p>
+                <div class="portfolio-card-hover-wrapper">
+                    <p class="portfolio-card-hover-wrapper__text"> .</p>
                 </div>
                 </div>
-                <div class="portfolio-title-crad">
-                  <h3>Постер New Orlean vs Golden Star</h3>
-                  <p>Дизайн</p>
+                <div class="portfolio-card-list-caption">
+                  <h3 class="portfolio-card-list-caption__title">Постер New Orlean vs Golden Star</h3>
+                  <p class="portfolio-card-list-caption__text">Дизайн</p>
                 </div>
               </a>
             </li>
-            <li class="portfolio-crad">
-              <a href="">
-                <div class="portfolio-thumb">
-                  <img class="portfolio-crad-img" src="./images/seafood.jpg" alt="Ресторан Seafood" width="370" height="294" />
-                  <div class="hover-wrapper">
-                    <p> .</p>
+            <li class="portfolio-card-list__item">
+              <a class="portfolio-card-list__link" href="">
+                <div class="portfolio-card-list__thumb">
+                  <img class="portfolio-card-list__img" src="./images/seafood.jpg" alt="Ресторан Seafood" width="370" height="294" />
+                  <div class="portfolio-card-hover-wrapper">
+                    <p class="portfolio-card-hover-wrapper__text"> .</p>
                   </div>
                 </div>
-                <div class="portfolio-title-crad">
-                  <h3>Ресторан Seafood</h3>
-                  <p>Приложение</p>
+                <div class="portfolio-card-list-caption">
+                  <h3 class="portfolio-card-list-caption__title">Ресторан Seafood</h3>
+                  <p class="portfolio-card-list-caption__text">Приложение</p>
                 </div>
               </a>
             </li>
-            <li class="portfolio-crad">
-              <a href="">
-                <div class="portfolio-thumb">
-                  <img class="portfolio-crad-img" src="./images/projektPrime.jpg" alt="Проект Prime" width="370" height="294" />
-                  <div class="hover-wrapper">
-                    <p> .</p>
+            <li class="portfolio-card-list__item">
+              <a class="portfolio-card-list__link" href="">
+                <div class="portfolio-card-list__thumb">
+                  <img class="portfolio-card-list__img" src="./images/projektPrime.jpg" alt="Проект Prime" width="370" height="294" />
+                  <div class="portfolio-card-hover-wrapper">
+                    <p class="portfolio-card-hover-wrapper__text"> .</p>
                   </div>
                 </div>
-                <div class="portfolio-title-crad">
-                  <h3>Проект Prime</h3>
-                  <p>Маркетинг</p>
+                <div class="portfolio-card-list-caption">
+                  <h3 class="portfolio-card-list-caption__title">Проект Prime</h3>
+                  <p class="portfolio-card-list-caption__text">Маркетинг</p>
                 </div>
               </a>
             </li>
-            <li class="portfolio-crad">
-              <a href="">
-                <div class="portfolio-thumb">
-                  <img class="portfolio-crad-img" src="./images/projektBoxes.jpg" alt="Проект Boxes" width="370" height="294" />
-                  <div class="hover-wrapper">
-                    <p> .</p>
+            <li class="portfolio-card-list__item">
+              <a class="portfolio-card-list__link" href="">
+                <div class="portfolio-card-list__thumb">
+                  <img class="portfolio-card-list__img" src="./images/projektBoxes.jpg" alt="Проект Boxes" width="370" height="294" />
+                  <div class="portfolio-card-hover-wrapper">
+                    <p class="portfolio-card-hover-wrapper__text"> .</p>
                   </div>
                 </div>
-                <div class="portfolio-title-crad">
-                  <h3>Проект Boxes</h3>
-                  <p>Приложение</p>
+                <div class="portfolio-card-list-caption">
+                  <h3 class="portfolio-card-list-caption__title">Проект Boxes</h3>
+                  <p class="portfolio-card-list-caption__text">Приложение</p>
                 </div>
               </a>
             </li>
-            <li class="portfolio-crad">
-              <a href="">
-                <div class="portfolio-thumb">
-                  <img class="portfolio-crad-img"
+            <li class="portfolio-card-list__item">
+              <a class="portfolio-card-list__link" href="">
+                <div class="portfolio-card-list__thumb">
+                  <img class="portfolio-card-list__img"
                   src="./images/inspiration.jpg"
                   alt="Inspiration has no Borders"
                   width="370"
                   height="294"
                   />
-                  <div class="hover-wrapper">
-                    <p> .</p>
+                  <div class="portfolio-card-hover-wrapper">
+                    <p class="portfolio-card-hover-wrapper__text"> .</p>
                   </div>
                 </div>
-                <div class="portfolio-title-crad">
-                  <h3>Inspiration has no Borders</h3>
-                  <p>Веб-сайт</p>
+                <div class="portfolio-card-list-caption">
+                  <h3 class="portfolio-card-list-caption__title">Inspiration has no Borders</h3>
+                  <p class="portfolio-card-list-caption__text">Веб-сайт</p>
                 </div>
               </a>
             </li>
-            <li class="portfolio-crad">
-              <a href="">
-                <div class="portfolio-thumb">
-                  <img class="portfolio-crad-img"
+            <li class="portfolio-card-list__item">
+              <a class="portfolio-card-list__link" href="">
+                <div class="portfolio-card-list__thumb">
+                  <img class="portfolio-card-list__img"
                   src="./images/limitedEdition.jpg"
                   alt="Издание Limited Edition"
                   width="370"
                   height="294"
                   />
-                  <div class="hover-wrapper">
-                    <p> .</p>
+                  <div class="portfolio-card-hover-wrapper">
+                    <p class="portfolio-card-hover-wrapper__text"> .</p>
                   </div>
                 </div>
-                <div class="portfolio-title-crad">
-                  <h3>ТИздание Limited Edition</h3>
-                  <p>Дизайн</p>
+                <div class="portfolio-card-list-caption">
+                  <h3 class="portfolio-card-list-caption__title">ТИздание Limited Edition</h3>
+                  <p class="portfolio-card-list-caption__text">Дизайн</p>
                 </div>
               </a>
             </li>
-            <li class="portfolio-crad">
-              <a href="">
-                <div class="portfolio-thumb">
-                  <img class="portfolio-crad-img" src="./images/lab.jpg" alt="Проект LAB" width="370" height="294" />
-                  <div class="hover-wrapper">
-                    <p> .</p>
+            <li class="portfolio-card-list__item">
+              <a class="portfolio-card-list__link" href="">
+                <div class="portfolio-card-list__thumb">
+                  <img class="portfolio-card-list__img" src="./images/lab.jpg" alt="Проект LAB" width="370" height="294" />
+                  <div class="portfolio-card-hover-wrapper">
+                    <p class="portfolio-card-hover-wrapper__text"> .</p>
                   </div>
                 </div>
-                <div class="portfolio-title-crad">
-                  <h3>Проект LAB</h3>
-                  <p>Маркетинг</p>
+                <div class="portfolio-card-list-caption">
+                  <h3 class="portfolio-card-list-caption__title">Проект LAB</h3>
+                  <p class="portfolio-card-list-caption__text">Маркетинг</p>
                 </div>
               </a>
             </li>
-            <li class="portfolio-crad">
-              <a href="">
-                <div class="portfolio-thumb">
-                  <img class="portfolio-crad-img"
+            <li class="portfolio-card-list__item">
+              <a class="portfolio-card-list__link" href="">
+                <div class="portfolio-card-list__thumb">
+                  <img class="portfolio-card-list__img"
                     src="./images/growingBusiness.jpg"
                     alt="Growing Business"
                     width="370"
                     height="294"
                   />
-                  <div class="hover-wrapper">
-                    <p> .</p>
+                  <div class="portfolio-card-hover-wrapper">
+                    <p class="portfolio-card-hover-wrapper__text"> .</p>
                   </div>
                 </div>
-                    <div class="portfolio-title-crad">
-                      <h3>Growing Business</h3>
-                      <p>Приложение</p>
+                    <div class="portfolio-card-list-caption">
+                      <h3 class="portfolio-card-list-caption__title">Growing Business</h3>
+                      <p class="portfolio-card-list-caption__text">Приложение</p>
                     </div>
             </li>
           </ul>
@@ -226,66 +244,74 @@
       </section>
     </main>
     <footer class="section-footer">
-      <div class="container footer-container">
-        <div class="footer-logo-nav-container">
-          <a href="#" class="logo-footer"
-            ><span class="logo-first-part">Web</span>Studio</a
+      <div class="container section-footer__container">
+        <div class="footer-logo-contacts">
+          <a href="#" class="logo section-footer__logo logo__studio_color_white"
+            ><span class="logo__first-part">Web</span>Studio</a
           >
-          <address>
-            <ul class="footer-list">
-              <li>
+          <address class="section-footer-address">
+            <ul class="section-footer-list">
+              <li class="section-footer-list__item">
                 <a
+                  class="section-footer-list__link aiming-transform"
                   href="https://goo.gl/maps/GkJHz6BWag29Yt4w9"
                   target="_blank"
                   rel="noopener noreferrer"
-                  class="link-footer aiming-transform"
                 >
                   г. Киев, пр-т Леси Украинки, 26
                 </a>
               </li>
-              <li>
+              <li class="section-footer-list__item">
                 <a
+                  class="
+                    section-footer-list__link
+                    aiming-transform
+                    section-footer-list__link--transparency
+                  "
                   href="mailto:info@example.com"
-                  class="link-footer aiming-transform link-footer-transparensy"
                   >info@example.com</a
                 >
               </li>
-              <li>
+              <li class="section-footer-list__item">
                 <a
+                  class="
+                    section-footer-list__link
+                    aiming-transform
+                    section-footer-list__link--transparency
+                  "
                   href="tel:+380991111111"
-                  class="link-footer aiming-transform link-footer-transparensy"
                   >+38 099 111 11 11</a
                 >
               </li>
             </ul>
           </address>
         </div>
-        <div class="icons-footer-card">
-          <h3>присоединяйтесь</h3>
-          <ul class="icons-footer-list">
-            <li>
-              <a class="icon-footer aiming-transform" href="">
+        <div class="footer-social">
+          <h3 class="footer-social__title">присоединяйтесь</h3>
+          <ul class="footer-social-list">
+            <li class="footer-social-list__item">
+              <a class="footer-social-list__icon aiming-transform" href="">
                 <svg width="20" height="20">
                   <use href="./images/icons.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
-            <li>
-              <a class="icon-footer aiming-transform" href="">
+            <li class="footer-social-list__item">
+              <a class="footer-social-list__icon aiming-transform" href="">
                 <svg width="20" height="20">
                   <use href="./images/icons.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
-            <li>
-              <a class="icon-footer aiming-transform" href="">
+            <li class="footer-social-list__item">
+              <a class="footer-social-list__icon aiming-transform" href="">
                 <svg width="20" height="20">
                   <use href="./images/icons.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
-            <li>
-              <a class="icon-footer aiming-transform" href="">
+            <li class="footer-social-list__item">
+              <a class="footer-social-list__icon aiming-transform" href="">
                 <svg width="20" height="20">
                   <use href="./images/icons.svg#icon-linkedin"></use>
                 </svg>
@@ -293,21 +319,27 @@
             </li>
           </ul>
         </div>
-        <form action="#">
-          <b class="footer-subscribe-title">Подпишитесь на рассылку</b>
-          <div class="form-footer-box">
+        <form class="subscribe-form" action="#">
+          <b class="subscribe-form__title">Подпишитесь на рассылку</b>
+          <div class="subscribe-form__box">
             <label for="footer-user-meil"></label>
             <input
-              class="area-footer-input"
+              class="subscribe-form__area-input"
               type="email"
               name="footer-user-meil"
               id="footer-user-meil"
               placeholder="E-mail"
               required
             />
-            <button class="button-footer-input aiming-transform" type="submit">
-              <p>Подписаться</p>
-              <svg class="icon-form-footer" width="24" height="24">
+            <button
+              class="
+                primary-button primary-button--padding-footer
+                aiming-transform
+              "
+              type="submit"
+            >
+              Подписаться
+              <svg class="subscribe-form__icon" width="24" height="24">
                 <use href="./images/icons.svg#icon-subscribe"></use>
               </svg>
             </button>
