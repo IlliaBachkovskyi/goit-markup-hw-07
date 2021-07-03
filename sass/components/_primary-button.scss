@@ -1,11 +1,6 @@
 .primary-button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.875;
-  letter-spacing: 0.06em;
+  @extend %ai-center_jc-center;
+  @include font (700, 16px, 1.875, 0.06em);
   background-color: var(--aiming-color);
   color: var(--body-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);

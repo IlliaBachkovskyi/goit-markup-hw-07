@@ -23,10 +23,7 @@
 
 .header-nav-list__link {
   font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.143;
-  letter-spacing: 0.02em;
+  @include font (500, 14px, 1.143, 0.02em);
   color: var(--main-text-color);
     &:hover,
     &:focus {
@@ -47,10 +44,7 @@
     }
     &__link {
       font-style: normal;
-      font-weight: 500;
-      font-size: 14px;
-      line-height: 1.143;
-      letter-spacing: 0.02em;
+      @include font (500, 14px, 1.143, 0.02em);
       color: var(--description-text-color);
     }
     &__link &__icon,

@@ -5,17 +5,11 @@
       display: inline-block;
       text-align: center;
       margin-bottom: 12px;
-      font-weight: 700;
-      font-size: 20px;
-      line-height: 1.15;
+      @include font (700, 20px, 1.15, 0.03em);
       text-align: center;
-      letter-spacing: 0.03em;
     }
     &-label {
-      font-weight: normal;
-      font-size: 12px;
-      line-height: 1.16;
-      letter-spacing: 0.01em;
+      @include font (400, 12px, 1.16, 0.01em);
       color: var(--description-text-color);
       margin-bottom: 4px;
       text-align: left;
@@ -60,10 +54,7 @@
   min-height: 120px;
   padding: 12px 16px;
   resize: none;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.01em;
+  @include font (400, 14px, 1.14, 0.01em);
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   outline: none;
@@ -72,13 +63,8 @@
     }
 }
 .contact-form-checkbox__agreement {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
+  @extend %ai-center_jc-center;
+  @include font (400, 14px, 1.71, 0.03em);
   color: var(--text-color);
     &:hover .contact-form-checkbox__icon,
     &:focus .contact-form-checkbox__icon {
@@ -102,9 +88,7 @@
       background-size: contain;
       background-origin: border-box;
       background-repeat: no-repeat;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      @extend %ai-center_jc-center;
     }
     &:focus+.contact-form-checkbox__icon {
       border-color: var(--aiming-color);
@@ -122,9 +106,7 @@
   }
   &__link-policy-conf {
     display: inline-block;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
+    @include font (400, 14px, 1.71, 0.03em);
     text-decoration-line: underline;
     color: var(--aiming-color);
     margin-left: 4px;
@@ -132,7 +114,5 @@
   }
 }
 .button-send {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @extend %ai-center_jc-center;
 }

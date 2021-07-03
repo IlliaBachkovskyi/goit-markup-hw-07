@@ -80,6 +80,12 @@ section {
   transition-timing-function: var(--cubic);
 }
 
+.features-list__card, .about-us-list__title, .social-icon-list__icon, .regular-customers-list__icon, .contact-form-checkbox__agreement, .contact-form-checkbox__checkbox:checked + .contact-form-checkbox__icon, .button-send, .button-close-modal, .primary-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .section-header {
   display: flex;
   align-items: center;
@@ -223,8 +229,8 @@ section {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.364;
-  text-align: center;
   letter-spacing: 0.06em;
+  text-align: center;
   text-transform: uppercase;
   margin: auto auto 30px auto;
   width: 696px;
@@ -245,9 +251,6 @@ section {
 }
 
 .features-list__card {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   margin-bottom: 30px;
   height: 120px;
   box-sizing: border-box;
@@ -265,6 +268,7 @@ section {
 }
 
 .features-list__text {
+  font-weight: 400;
   font-size: 14px;
   line-height: 1.714;
   letter-spacing: 0.03em;
@@ -275,8 +279,8 @@ section {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.167;
-  text-align: center;
   letter-spacing: 0.03em;
+  text-align: center;
   color: var(--main-text-color);
   margin-bottom: 50px;
 }
@@ -298,9 +302,6 @@ section {
 }
 
 .about-us-list__title {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   position: absolute;
   bottom: 0;
   margin: 0;
@@ -320,10 +321,11 @@ section {
 }
 
 .section-our-team__title {
+  font-weight: 500;
   font-size: 36px;
   line-height: 1.167;
-  text-align: center;
   letter-spacing: 0.03em;
+  text-align: center;
   margin-bottom: 50px;
 }
 
@@ -349,16 +351,17 @@ section {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.187;
-  text-align: center;
   letter-spacing: 0.03em;
+  text-align: center;
   margin-bottom: 10px;
 }
 
 .our-team-list__prof {
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.187;
-  text-align: center;
   letter-spacing: 0.03em;
+  text-align: center;
   color: var(--description-text-color);
   margin-bottom: 16px;
 }
@@ -374,9 +377,6 @@ section {
 }
 
 .social-icon-list__icon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -402,10 +402,11 @@ section {
 }
 
 .section-regular-customers__title {
+  font-weight: 700;
   font-size: 36px;
   line-height: 1.167;
-  text-align: center;
   letter-spacing: 0.03em;
+  text-align: center;
   margin-bottom: 50px;
 }
 
@@ -423,9 +424,6 @@ section {
   border: 1px solid var(--social-lincs-client-color);
   border-radius: 4px;
   fill: var(--social-lincs-client-color);
-  display: flex;
-  align-items: center;
-  justify-content: center;
   width: 170px;
   height: 92px;
 }
@@ -460,8 +458,8 @@ section {
 .section-footer-list__link {
   font-style: normal;
   font-family: var(--main-fonts);
-  font-weight: 400;
   color: var(--body-color);
+  font-weight: 400;
   font-size: 14px;
   line-height: 1.143;
   letter-spacing: 0.03em;
@@ -502,12 +500,12 @@ section {
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
-  text-align: center;
   letter-spacing: 0.03em;
+  text-align: center;
 }
 
 .contact-form-label {
-  font-weight: normal;
+  font-weight: 400;
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
@@ -560,7 +558,7 @@ section {
   min-height: 120px;
   padding: 12px 16px;
   resize: none;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.01em;
@@ -574,10 +572,7 @@ section {
 }
 
 .contact-form-checkbox__agreement {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -608,9 +603,6 @@ section {
   background-size: contain;
   background-origin: border-box;
   background-repeat: no-repeat;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .contact-form-checkbox__checkbox:focus + .contact-form-checkbox__icon {
@@ -629,6 +621,7 @@ section {
 
 .contact-form-checkbox__link-policy-conf {
   display: inline-block;
+  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -636,12 +629,6 @@ section {
   color: var(--aiming-color);
   margin-left: 4px;
   cursor: pointer;
-}
-
-.button-send {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .portfolio-button-list {
@@ -731,15 +718,19 @@ section {
 }
 
 .portfolio-card-list-caption__title {
+  font-weight: 700;
   font-size: 18px;
   line-height: 2;
+  letter-spacing: 0.06em;
   color: var(--main-text-color);
   margin-bottom: 4px;
 }
 
 .portfolio-card-list-caption__text {
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.875;
+  letter-spacing: 0.03em;
   color: var(--description-text-color);
 }
 
@@ -782,9 +773,6 @@ section {
 
 /* button-close-modal */
 .button-close-modal {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   width: 30px;
   height: 30px;
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -842,9 +830,6 @@ section {
 }
 
 .primary-button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.875;

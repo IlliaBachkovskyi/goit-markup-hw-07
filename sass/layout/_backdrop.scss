@@ -33,9 +33,7 @@
 }
 /* button-close-modal */
 .button-close-modal { 
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @extend %ai-center_jc-center;
   width: 30px;
   height: 30px;
   border: 1px solid rgba(0, 0, 0, 0.1);

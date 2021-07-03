@@ -1,9 +1,6 @@
 .section-about-us__title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.167;
+  @include font (700, 36px, 1.167, 0.03em);
   text-align: center;
-  letter-spacing: 0.03em;
   color: var(--main-text-color);
   margin-bottom: 50px;
 }
@@ -20,18 +17,13 @@
     display: block;
   }
   &__title {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @extend %ai-center_jc-center;
     position: absolute;
     bottom: 0;
     margin: 0;
     width: 100%;
     height: 70px;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.172;
-    letter-spacing: 0.03em;
+    @include font (700, 14px, 1.172, 0.03em);
     text-transform: uppercase;
     color: var(--body-color);
     background-color: rgba(47, 48, 58, 0.8);

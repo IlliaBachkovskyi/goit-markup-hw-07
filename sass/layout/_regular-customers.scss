@@ -1,8 +1,6 @@
 .section-regular-customers__title {
-  font-size: 36px;
-  line-height: 1.167;
+  @include font (700, 36px, 1.167, 0.03em);
   text-align: center;
-  letter-spacing: 0.03em;
   margin-bottom: 50px;
 }
 
@@ -13,13 +11,11 @@
       margin-right: 30px;
     }
     &__icon {
+      @extend %ai-center_jc-center;
       box-sizing: border-box;
       border: 1px solid var(--social-lincs-client-color);
       border-radius: 4px;
       fill: var(--social-lincs-client-color);
-      display: flex;
-      align-items: center;
-      justify-content: center;
       width: 170px;
       height: 92px;
         &:hover,
