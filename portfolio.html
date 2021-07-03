@@ -15,6 +15,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <header class="section-header">
@@ -32,7 +33,7 @@
               >
             </li>
             <li class="header-nav-list__item">
-              <a href="" class="header-nav-list__link header-nav-list__link--highlight"
+              <a href="" class="header-nav-list__link header-nav-list__link--highlight-current-page"
                 >Портфолио</a
               >
             </li>
@@ -202,7 +203,7 @@
                   </div>
                 </div>
                 <div class="portfolio-card-list-caption">
-                  <h3 class="portfolio-card-list-caption__title">ТИздание Limited Edition</h3>
+                  <h3 class="portfolio-card-list-caption__title">Издание Limited Edition</h3>
                   <p class="portfolio-card-list-caption__text">Дизайн</p>
                 </div>
               </a>
@@ -288,30 +289,42 @@
         </div>
         <div class="footer-social">
           <h3 class="footer-social__title">присоединяйтесь</h3>
-          <ul class="footer-social-list">
-            <li class="footer-social-list__item">
-              <a class="footer-social-list__icon aiming-transform" href="">
+          <ul class="social-icon-list">
+            <li class="social-icon-list__item">
+              <a
+                class="social-icon-list__icon social-icon-list__icon--dark aiming-transform"
+                href=""
+              >
                 <svg width="20" height="20">
                   <use href="./images/icons.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
-            <li class="footer-social-list__item">
-              <a class="footer-social-list__icon aiming-transform" href="">
+            <li class="social-icon-list__item">
+              <a
+                class="social-icon-list__icon social-icon-list__icon--dark aiming-transform"
+                href=""
+              >
                 <svg width="20" height="20">
                   <use href="./images/icons.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
-            <li class="footer-social-list__item">
-              <a class="footer-social-list__icon aiming-transform" href="">
+            <li class="social-icon-list__item">
+              <a
+                class="social-icon-list__icon social-icon-list__icon--dark aiming-transform"
+                href=""
+              >
                 <svg width="20" height="20">
                   <use href="./images/icons.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
-            <li class="footer-social-list__item">
-              <a class="footer-social-list__icon aiming-transform" href="">
+            <li class="social-icon-list__item">
+              <a
+                class="social-icon-list__icon social-icon-list__icon--dark aiming-transform"
+                href=""
+              >
                 <svg width="20" height="20">
                   <use href="./images/icons.svg#icon-linkedin"></use>
                 </svg>
@@ -332,10 +345,7 @@
               required
             />
             <button
-              class="
-                primary-button primary-button--padding-footer
-                aiming-transform
-              "
+              class="primary-button primary-button--padding-footer aiming-transform"
               type="submit"
             >
               Подписаться
