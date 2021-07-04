@@ -1,4 +1,4 @@
-.section-header {
+.header {
   display: flex;
   align-items: center;
   padding-top: 25px;
@@ -13,15 +13,17 @@
       margin-right: 93px;
     }
 }
-.header-nav-list {
+.nav__list {
   display: flex;
   justify-content: space-between;
-    &__item:not(:last-child) {
+}  
+.nav__item {
+  &:not(:last-child) {
       margin-right: 50px;
     }
 }
 
-.header-nav-list__link {
+.nav__link {
   font-style: normal;
   @include font (500, 14px, 1.143, 0.02em);
   color: var(--main-text-color);
@@ -31,32 +33,34 @@
     }
 }
 
-.header-contacts-list {
-  display: flex;
-  justify-content: space-between;
-  margin-left: auto;
-  align-items: center;
-    &__item:not(:last-child) {
-      margin-right: 50px;
-    }
-    &__icon {
-      margin-right: 10px;
-    }
-    &__link {
-      font-style: normal;
-      @include font (500, 14px, 1.143, 0.02em);
-      color: var(--description-text-color);
-    }
-    &__link &__icon,
-    &__link &__icon {
-      transition: 250ms var(--cubic);
-    }
-    &__link:hover &__icon,
-    &__link:focus &__icon {
-      fill: var(--aiming-color);
-    }
-    &__link:hover,
-    &__link:focus {
+.contacts {
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+    align-items: center;
+  }  
+  &__item:not(:last-child) {
+    margin-right: 50px;
+  }
+  &__icon {
+    margin-right: 10px;
+  }
+  &__link {
+    font-style: normal;
+    @include font (500, 14px, 1.143, 0.02em);
+    color: var(--description-text-color);
+  }
+  &__link &__icon,
+  &__link &__icon {
+    transition: 250ms var(--cubic);
+  }
+  &__link:hover &__icon,
+  &__link:focus &__icon {
+    fill: var(--aiming-color);
+  }
+  &__link:hover,
+  &__link:focus {
       color: var(--aiming-color);
-    }
+  }
 }

@@ -1,4 +1,4 @@
-.section-footer {
+.footer {
   background-color: var(--background-color);
   padding-top: 60px;
   padding-bottom: 60px;
@@ -13,12 +13,12 @@
   flex-direction: column;
   margin-right: 70px;
 }
-.section-footer-list__item {
+.footer__item {
   &:not(:last-child) {
     margin-bottom: 9px;
   }
 }
-.section-footer-list__link {
+.footer__link {
   font-style: normal;
   font-family: var(--main-fonts);
   color: var(--body-color);

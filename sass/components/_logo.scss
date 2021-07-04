@@ -6,13 +6,12 @@
     color: var(--aiming-color);
 }
 }
-.section{
-  &-header__logo {
+
+.header__logo {
   margin-right: 93px;
 }
-  &-footer__logo {
+.footer__logo {
   margin-bottom: 20px;
-}
 }
 .logo__studio_color {
   &_black {

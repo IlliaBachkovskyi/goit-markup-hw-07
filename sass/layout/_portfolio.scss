@@ -1,15 +1,18 @@
-.portfolio-button-list {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
-    &__item:not(:last-child) {
-      margin-right: 8px;
+.portfolio-button {
+  &__list {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+  &__item:not(:last-child) {
+    margin-right: 8px;
     }
 }
-
-.portfolio-card-list {
-  display: flex;
-  flex-wrap: wrap;
+.portfolio-card {
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
     &__item {
       display: flex;
       background: var(--body-color);
@@ -48,8 +51,22 @@
       flex-basis: 370px;
       height: auto;
     }
+    &__caption {
+      padding: 20px 24px;
+      border-right: 1px solid var(--border-line-color);
+      border-bottom: 1px solid var(--border-line-color);
+      border-left: 1px solid var(--border-line-color);
+    }
+    &__title {
+      @include font (700, 18px, 2, 0.06em);
+      color: var(--main-text-color);
+      margin-bottom: 4px;
+    }
+    &__text {
+      @include font (400, 16px, 1.875, 0.03em);
+      color: var(--description-text-color);
+    }
 }
-
 .portfolio-card-hover-wrapper {
   position: absolute;
   width: 100%;
@@ -62,21 +79,5 @@
     .portfolio-card-list__item &__text {
       @include font (400, 18px, 1.556, 0.03em);
       color: var(--body-color);
-    }
-}
-
-.portfolio-card-list-caption {
-  padding: 20px 24px;
-  border-right: 1px solid var(--border-line-color);
-  border-bottom: 1px solid var(--border-line-color);
-  border-left: 1px solid var(--border-line-color);
-    &__title {
-      @include font (700, 18px, 2, 0.06em);
-      color: var(--main-text-color);
-      margin-bottom: 4px;
-    }
-    &__text {
-      @include font (400, 16px, 1.875, 0.03em);
-      color: var(--description-text-color);
     }
 }

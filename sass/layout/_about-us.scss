@@ -1,14 +1,16 @@
-.section-about-us__title {
+.about-us__title {
   @include font (700, 36px, 1.167, 0.03em);
   text-align: center;
   color: var(--main-text-color);
   margin-bottom: 50px;
 }
-.about-us-list {
-  display: flex;
-  justify-content: space-between;
-  padding-left: 0px;
-  flex-wrap: wrap;
+.about-us {
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 0px;
+    flex-wrap: wrap;
+  }
   &__item {
     flex-basis: calc((100% - 60px) / 3);
     position: relative;
@@ -16,7 +18,7 @@
   &__img {
     display: block;
   }
-  &__title {
+  &__card-title {
     @extend %ai-center_jc-center;
     position: absolute;
     bottom: 0;
